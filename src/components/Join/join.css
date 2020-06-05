@@ -1,0 +1,93 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("../../images/rick-morty.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* height: 80%; */
+}
+
+.joinOuterContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+
+  /* height: 100vh; */
+  /* align-items: center;
+  background-color: #fff; */
+}
+
+.joinInnerContainer {
+  /* width: 20%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 25rem;
+  border: 2px solid #3d44479e;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.heading {
+  color: #3d4447;
+  font-size: 4vw;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #364f6b38;
+  text-transform: uppercase;
+}
+
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #46b8d3;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 25rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
